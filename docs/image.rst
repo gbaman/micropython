@@ -13,15 +13,22 @@ Classes
     If ``string`` is used, it has to consist of digits 0-9 arranged into
     lines, describing the image, for example::
 
+        image = Image("90009:"
+                      "09090:"
+                      "00900:"
+                      "09090:"
+                      "90009")
+
+    will create a 5×5 image of an X. It's also possible to use a newline (\n)
+    to indicate the end of a line like this::
+
         image = Image("90009\n"
                       "09090\n"
                       "00900\n"
                       "09090\n"
                       "90009")
 
-    will create a 5×5 image of an X.
-
-    With the other form, it creates an empty image with ``width`` columns and
+    The other form creates an empty image with ``width`` columns and
     ``height`` rows. Optionally ``buffer`` can be an array of
     ``width``×``height`` integers in range 0-9 to initialize the image.
 
@@ -60,7 +67,6 @@ Classes
     .. py:method:: shift_right(n)
 
         Same as ``image.shift_left(-n)``.
-g
 
     .. py:method:: shift_up(n)
 
@@ -81,11 +87,15 @@ attributes:
     * ``Image.HEART``
     * ``Image.HEART_SMALL``
     * ``Image.HAPPY``
+    * ``Image.SMILE``
     * ``Image.SAD``
     * ``Image.CONFUSED``
     * ``Image.ANGRY``
     * ``Image.ASLEEP``
     * ``Image.SURPRISED``
+    * ``Image.SILLY``
+    * ``Image.FABULOUS``
+    * ``Image.MEH``
     * ``Image.YES``
     * ``Image.NO``
     * ``Image.CLOCK12``, ``Image.CLOCK11``, ``Image.CLOCK10``, ``Image.CLOCK9``,
@@ -94,6 +104,40 @@ attributes:
     * ``Image.ARROW_N``, ``Image.ARROW_NE``, ``Image.ARROW_E``,
       ``Image.ARROW_SE``, ``Image.ARROW_S``, ``Image.ARROW_SW``,
       ``Image.ARROW_W``, ``Image.ARROW_NW``
+    * ``Image.TRIANGLE``
+    * ``Image.TRIANGLE_LEFT``
+    * ``Image.CHESSBOARD``
+    * ``Image.DIAMOND``
+    * ``Image.DIAMOND_SMALL``
+    * ``Image.SQUARE``
+    * ``Image.SQUARE_SMALL``
+    * ``Image.RABBIT``
+    * ``Image.COW``
+    * ``Image.MUSIC_CROTCHET``
+    * ``Image.MUSIC_QUAVER``
+    * ``Image.MUSIC_QUAVERS``
+    * ``Image.PITCHFORK``
+    * ``Image.XMAS``
+    * ``Image.PACMAN``
+    * ``Image.TARGET``
+    * ``Image.TSHIRT``
+    * ``Image.ROLLERSKATE``
+    * ``Image.DUCK``
+    * ``Image.HOUSE``
+    * ``Image.TORTOISE``
+    * ``Image.BUTTERFLY``
+    * ``Image.STICKFIGURE``
+    * ``Image.GHOST``
+    * ``Image.SWORD``
+    * ``Image.GIRAFFE``
+    * ``Image.SKULL``
+    * ``Image.UMBRELLA``
+    * ``Image.SNAKE``
+
+Finally, related collections of images have been grouped together::
+
+    * ``Image.ALL_CLOCKS``
+    * ``Image.ALL_ARROWS``
 
 
 Operations

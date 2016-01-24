@@ -4,7 +4,11 @@ Music
 .. py:module:: music
 
 This is the ``music`` module. You can use it to play simple tunes, provided
-that you connect a speaker to your board.
+that you connect a speaker to your board. To access this module you need to::
+
+    import music
+
+We assume you have done this for the examples below.
 
 
 Musical Notation

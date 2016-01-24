@@ -11,9 +11,12 @@ into your board.
 Functions
 =========
 
-.. py:function:: panic()
+.. py:function:: panic(n)
 
-    Enter a panic mode. Requires restart.
+    Enter a panic mode. Requires restart. Pass in an arbitrary integer to
+    indicate a status::
+
+        microbit.panic(404)
 
 
 .. py:function:: reset()
@@ -72,7 +75,6 @@ Modules
     :maxdepth: 1
 
     display.rst
-    music.rst
     uart.rst
     i2c.rst
     accelerometer.rst

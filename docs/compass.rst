@@ -3,8 +3,13 @@ Compass
 
 .. py:module:: microbit.compass
 
-This module lets you access the build-in electronic compass. Before using,
+This module lets you access the built-in electronic compass. Before using,
 the compass should be calibrated, otherwise the readings may be wrong.
+
+.. warning::
+
+    The compass on the device is not particularly accurate, even when
+    calibrated. Your mileage may vary.
 
 
 Functions
