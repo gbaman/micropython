@@ -15,8 +15,6 @@ The following documentation assumes you have done this.
 
 There are a few functions available directly::
 
-    # returns a pseudo-random number between 0 and n-1.
-    random(n)
     # sleep for the given number of milliseconds.
     sleep(ms)
     # returns the number of milliseconds since the micro:bit was last switched on.

@@ -33,16 +33,6 @@ Functions
     will pause the execution for one second.
 
 
-.. py:function:: random(n)
-
-    Generate a pseudo-random number between 0 and ``n``-1. For instance::
-
-        result = microbit.random(6) + 1
-
-    will simulate a roll of a six-sided die, giving numbers from 1 to 6
-    inclusive.
-
-
 .. py:function:: running_time()
 
     Return the number of milliseconds since the board was switched on or
