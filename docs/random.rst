@@ -6,20 +6,17 @@ Random Number Generation
 This module is based upon the ``random`` module in the Python standard library.
 It contains functions for generating random behaviour.
 
-.. warning::
-
-    The compass on the device is not particularly accurate, even when
-    calibrated. Your mileage may vary.
-
-
 Functions
 =========
 
 .. py:function:: getrandbits(n)
 
-    Returns an integer with ``n`` random bits. Because the underlying
-    generator function returns at most 30 bits, ``n`` may only be a value
-    between 1-30 (inclusive).
+    Returns an integer with ``n`` random bits.
+
+.. warning::
+
+    Because the underlying generator function returns at most 30 bits, ``n``
+    may only be a value between 1-30 (inclusive).
 
 .. py:function:: seed(n)
 
