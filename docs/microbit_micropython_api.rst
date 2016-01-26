@@ -98,7 +98,7 @@ Each of these pins are instances of the ``MicroBitPin`` class, which offers the 
     pin.write_analog(value)
     # returns an integer between 0 and 1023
     pin.read_analog()
-    # sets the period of the PWM output of the pin in milliseconds 
+    # sets the period of the PWM output of the pin in milliseconds
     # (see https://en.wikipedia.org/wiki/Pulse-width_modulation)
     pin.set_analog_period(int)
     # sets the period of the PWM output of the pin in microseconds
